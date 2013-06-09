@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderIcons = []
+  BorderStyle = bsSizeToolWin
+  Caption = 'Suzie'
+  ClientHeight = 267
+  ClientWidth = 204
+  Color = clBtnFace
+  DragMode = dmAutomatic
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnHide = FormActivate
+  OnPaint = FormActivate
+  OnShow = FormActivate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Memo1: TMemo
+    Left = 0
+    Top = 0
+    Width = 204
+    Height = 246
+    Align = alClient
+    BorderStyle = bsNone
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+  object Edit1: TEdit
+    Left = 0
+    Top = 246
+    Width = 204
+    Height = 21
+    Align = alBottom
+    TabOrder = 1
+    OnEnter = Edit1Enter
+    OnKeyDown = Edit1KeyDown
+  end
+  object Timer1: TTimer
+    Interval = 10
+    OnTimer = FormActivate
+    Left = 216
+    Top = 104
+  end
+end
