@@ -57,32 +57,9 @@ end;
 procedure TForm1.Edit1KeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
 begin
-
-    if key = vk_return then
-
-    begin
-
-    If Edit1.Text='В лолец!' Then
-    Begin
-    WinExec('C:\IGORI\lolec\lol.launcher.exe',SW_SHOWNORMAL);
-    end;
-    If Edit1.Text='Включи музыку' Then
-    Begin
-    WinExec('C:\Program Files (x86)\Windows Media Player\wmplayer.exe',SW_SHOWNORMAL);
-    end;
-    If Edit1.Text='Набери Триджу' Then
-    Begin
-    WinExec('http://skype:tridj86?call',SW_SHOWNORMAL);
-    end;
-    If Edit1.Text='Запусти хром' Then
-    Begin
-    WinExec('C:\Program Files (x86)\Google\Chrome\Application\chrome.exe',SW_SHOWNORMAL);
-    end;
-
-
-
-
-
+if key = vk_return then
+begin
+Memo1.Lines.Add('test');
 memo1.Lines.Add('> '+edit1.text);
 input(edit1.text);
 edit1.Text := '';
